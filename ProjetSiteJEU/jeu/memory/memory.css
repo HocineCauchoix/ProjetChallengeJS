@@ -1,0 +1,42 @@
+.container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url('img/background2.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+h1, p{
+    text-align: center;
+}
+
+
+
+#memory{
+    margin: auto;
+    padding: 20px;
+    background: black;
+    width: 800px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(4, 180px);
+    grid-gap: 20px;
+}
+
+img{
+    width: 100%;
+}
+
+span{
+    height: 190px;
+}
+
+.restartBtn {
+    position: relative;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

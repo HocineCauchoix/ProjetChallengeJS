@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+hr {
+    width: 500px;
+}
+
+#board {
+    width: 400px;
+    height: 400px;
+
+    background-color: #cdc1b5;
+    border: 6px solid #bbada0;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 90px;
+    height: 90px;
+    border: 5px solid #bbada0;
+
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* colored tiles */
+
+.x2 {
+    background-color: #eee4da;
+    color: #727371;
+}
+
+.x4 {
+    background-color: #ece0ca;
+    color: #727371;
+}
+
+.x8 {
+    background-color: #97e2ef;
+    color: white;
+}
+
+.x16{
+    background-color: #37d8e1;
+    color: white;
+}
+
+.x32{
+    background-color: #1d91b5;
+    color: white;
+}
+
+.x64{
+    background-color: #0d518c;
+    color: white;
+}
+
+.x128{
+    background-color: #192671;
+    color: white;
+}
+
+.x256{
+    background-color: #902eeb;
+    color: white;
+}
+
+.x512{
+    background-color: #aa27b4;
+    color: white;
+}
+
+.x1024{
+    background-color: #3a0838;
+    color: white;
+}
+
+.x2048{
+    background-color: #892d5e;
+    color: white;
+}
+
+.x4096 {
+    background-color: #3a0d0d;
+    color: white;
+}
+
+.x8192 {
+    background-color: #390303;
+    color: white;
+}
+
+.bg {
+        
+    background-image: url("https://static.vecteezy.com/ti/vecteur-libre/p1/3303295-montagnes-fond-jeu-vectoriel.jpg");
+    
+    height: 100%;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  }
+
+    body, html {  height: 100%;margin: 0;}
+
+    #rules-btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    #rules-box {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 300px;
+        padding: 20px;
+        background-color: #f1f1f1;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        z-index: 1;
+    }
+    
+    #rules-box h3 {
+        margin-top: 0;
+    }
+    
+    #rules-btn:hover + #rules-box {
+        display: block;
+    }
+    
+    #rules-box:hover {
+        display: block;
+    }
+
+    
+#restartBtn {
+        position: relative;
+        top: 500px;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      
+      
+
+ 
+
+ 

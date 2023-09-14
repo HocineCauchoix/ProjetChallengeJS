@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color:rgb(15, 131, 199);
+}
+
+.header{
+    width: 100%;
+    background-color:  rgb(255, 134, 120);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    position: relative;
+}
+
+.header .container {
+    width: 85%;
+    margin : auto; 
+    display: flex;
+    justify-content: space-between;
+    height: 100px; 
+    align-items: center;
+
+}
+
+.header .container .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.header .container .nav-links a{
+    color: rgb(227, 226, 235);
+    text-decoration: none;
+    margin-left: 40px;
+    text-transform: uppercase;
+    transition: 0,3s;
+}
+
+.header .container .nav-links a:hover,
+.header .container .nav-links a.active{
+    color: #090366;
+}
+
+.header .container .nav-links .soc-links {
+    margin-left: 50px;
+}
+
+.header .container .nav-links .soc-links a{
+    font-size: 22px;
+    margin-left: 15px;
+}
+
+#btn-menu{
+    display: none;
+}
+
+
+@media(max-width:1000px){
+    .header .container{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .header .container .nav-links a{
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    .header .container .nav-links .soc-links a{
+        margin-left: 30px;
+    }
+}
+
+@media(max-width:750px){
+    
+    #btn-menu{
+        display: block;
+        position : absolute;
+        color: rgb(240, 6, 209);
+        font-size: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+        font-size: 22px;
+        border: 2px solid rgb(253, 253, 253);
+        color: rgb(15, 131, 199);
+        width: 40px;
+        height: 35px;
+        text-align: center;
+        line-height: 33px;
+    }  
+    .header .container .nav-links{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(15, 131, 199) ;
+        flex-wrap: wrap;
+        padding: 10px;
+        border-top: 1px solid rgb(255, 255, 255);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition:0.3s;
+    }
+    .header .container .nav-links.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .container .nav-links a{
+        display: block;
+        padding: 20px;
+        width: 100%;
+        border-bottom: 1px solid white;
+    }
+    .header .container .nav-links .soc-links{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        margin: auto;
+        padding: 20px 0 10px;
+    }
+
+    .header .container .nav-links .soc-links a{
+        font-size: 25px;
+        text-align: center;
+        margin-left: 0;
+        padding: 0;
+        border-bottom: none;
+    }
+}
+
+.slide{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    
+}
+    
+.ensemble-fleche{
+    width: 1000px;
+    min-width: 700px;
+    display: flex;
+    margin: auto;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    border: 1px solid rgb(15, 131, 199);;
+    width: 250px;
+    height: 400px;
+    min-width: 250px;
+    min-height: 400px;
+    transition-duration: 350ms;
+    margin: 5px;
+    z-index: 1;
+}
+
+.card1{
+    background: url(img/2048.jpg);
+    background-size: cover;
+}
+
+.card2{
+    background: url(img/snake.jpg);
+    background-size: cover;
+}
+
+.card3{
+    background: url(img/memories.jpg);
+    background-size: cover;
+}
+
+.card4{
+    background: url(img/Puissance4.jpg);
+    background-size: cover;
+}
+
+.card5{
+    background: url(img/Puissance4.jpg);
+    background-size: cover;
+}
+
+.card6{
+     background: url(img/snake.jpg);
+    background-size: cover;
+}
